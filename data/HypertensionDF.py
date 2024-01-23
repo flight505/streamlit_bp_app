@@ -6,9 +6,7 @@ from scipy.stats import norm
 class HypertensionDF:
     def __init__(self):
         # Load the BP tables only once during initialization
-        self.bp_tables = pd.read_csv(
-            "/Users/jespervang/Projects/MTX/MTX data 2023/src/blood_pressure/bp_app/app/data/bptable.csv"
-        )
+        self.bp_tables = pd.read_csv("data/bptable.csv")
 
     def calculate_percentile_using_zscore(self, bp_value, bp_tile):
         # Calculate the mean and standard deviation
