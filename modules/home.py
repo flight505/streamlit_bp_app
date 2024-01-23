@@ -1,11 +1,12 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
-from data.HypertensionDF import HypertensionDF
 from scipy.__config__ import show
 from streamlit_echarts import st_echarts
 from streamlit_extras.stylable_container import stylable_container
 from streamlit_extras.tags import tagger_component
+
+from data.HypertensionDF import HypertensionDF
 
 # function Load the bptables
 # placeholder for markdown text
@@ -96,7 +97,7 @@ def get_hypertension_statuses(uploaded_file):
 
 
 def app():
-    st.subheader("Determining Hypertension Status for a Single Individual")
+    st.subheader("Determining Hypertension Status for Individuals")
     with st.expander("What is hypertension?"):
         st.markdown(paper_reference)
     ht_single = HypertensionDF()
