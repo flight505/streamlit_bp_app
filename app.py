@@ -18,7 +18,21 @@ if __name__ == "__main__":
         menu_items={
             "Get Help": "https://github.com/flight505/streamlit_bp_app",
             "Report a bug": "https://github.com/flight505/streamlit_bp_app/issues",
-            "About": "Designed to determine hypertension stages and percentiles based on input blood pressure data",
+            "About": "# Designed to determine hypertension stages and percentiles based on input blood pressure data",
         },
+    )
+    st.markdown(
+        """
+        <style>
+            .reportview-container {
+                margin-top: -2em;
+            }
+            #MainMenu {visibility: hidden;}
+            .stDeployButton {display:none;}
+            footer {visibility: hidden;}
+            #stDecoration {display:none;}
+        </style>
+    """,
+        unsafe_allow_html=True,
     )
 app.run()
