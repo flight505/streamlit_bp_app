@@ -2,8 +2,6 @@ altair==5.1.1
 numpy==1.25.2
 pandas==2.0.3
 scipy==1.11.2
-snowflake_connector_python==3.1.0
-snowflake_snowpark_python==1.7.0
 streamlit==1.26.0
 streamlit_echarts==0.4.0
 streamlit_extras==0.3.2
